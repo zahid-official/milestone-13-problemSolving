@@ -263,4 +263,25 @@ git push origin feature/your-feature-name
 # 5. Open a Pull Request against the main branch
 ```
 
+<<<<<<< HEAD
 <p align="center"><b>Milestone 13</b> — <i>Mastering TypeScript, one problem at a time.</i></p>
+=======
+## 🔹 **Key Differences**
+
+| Feature | `any` | `unknown` | `never` |
+| --- | --- | --- | --- |
+| **Type Safety** | No type safety. Type checking is disabled. | Requires type checking before use, preserving type safety. | Does not allow any values; represents functions that never return. |
+| **Use Case** | When you want maximum flexibility, but lose type safety. | When the type is unknown, but you want to enforce type checking. | For functions that don’t return a value (infinite loops, errors). |
+| **Assignments** | Can assign any type freely without errors. | Must check the type before performing any operation. | Cannot be assigned any value. |
+| **Common Use** | Used for dynamic, untyped data where type checking is not a priority. | Used when dealing with uncertain data where validation is required. | Used for functions or code paths that cannot finish normally (e.g., infinite loops or error-throwing functions). |
+
+## 🔹 **Conclusion**
+
+In summary, `any`, `unknown`, and `never` serve different purposes in TypeScript:
+
+- **`any`** provides the most flexibility but sacrifices type safety. It should be used cautiously to avoid undermining TypeScript's core benefit of static type checking.
+- **`unknown`** ensures type safety by requiring explicit type checks before using the value, making it a safer alternative to `any`.
+- **`never`** is used for functions that never return a value or when an operation cannot be completed, such as in infinite loops or error-throwing situations.
+
+By understanding and correctly using any, unknown, and never, developers can write more reliable, maintainable, and type-safe code.
+>>>>>>> ee61bb8a3a96463cdee70652ef936dfe4aae2049
