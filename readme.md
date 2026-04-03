@@ -1,10 +1,8 @@
 <div align="center">
 
-<img src="https://img.shields.io/badge/TS-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript Logo" height="50" />
+# TypeScript Problem Solving
 
-#  TypeScript Problem Solving
-
-A hands-on TypeScript project demonstrating core language features through practical problem-solving — covering generics, type guards, union & intersection types, enums, OOP inheritance, async patterns, and more.
+A hands-on TypeScript project demonstrating core language features through practical problem-solving - covering generics, type guards, union & intersection types, enums, OOP inheritance, async patterns and more.
 
 [![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zahid-official/milestone-13)
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
@@ -17,52 +15,27 @@ A hands-on TypeScript project demonstrating core language features through pract
 
 ## 🔍 Overview
 
-**Milestone 13** is a focused TypeScript exercise project that tackles real-world coding problems using TypeScript's powerful type system. Each function demonstrates a specific language concept — from generics and type narrowing to class inheritance and async/await — making it an ideal reference for building type-safe, maintainable code.
+This project is a focused TypeScript exercise project that tackles real-world coding problems using TypeScript's powerful type system. Each function demonstrates a specific language concept - from generics and type narrowing to class inheritance and async/await - making it an ideal reference for building type-safe, maintainable code.
 
 > _Mastering TypeScript, one problem at a time._
 
 <br/>
 
-## ✨ Key Features
-
-### 🔤 Type System Mastery
+## ✨ Problem Solving
 
 <table align="center">
 <thead>
-<tr><th align="left">Feature</th><th align="left">Description</th></tr>
+<tr><th align="center">No.</th><th align="left">Problem</th><th align="left">Function / Class</th><th align="left">Concept</th><th align="left">Description</th></tr>
 </thead>
 <tbody>
-<tr><td><b>Union Types</b></td><td>Process values of multiple types using <code>string | number</code> unions with type narrowing</td></tr>
-<tr><td><b>Intersection Types</b></td><td>Combine multiple type definitions into composite types using the <code>&</code> operator</td></tr>
-<tr><td><b>Generics</b></td><td>Build reusable, type-safe functions like <code>concatenateArrays&lt;T&gt;</code> that work across any type</td></tr>
-<tr><td><b>Enums</b></td><td>Define named constant sets with <code>Day</code> enum for structured, readable conditional logic</td></tr>
-</tbody>
-</table>
-
-### 🏗️ Object-Oriented Patterns
-
-<table align="center">
-<thead>
-<tr><th align="left">Feature</th><th align="left">Description</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Class Inheritance</b></td><td><code>Car</code> extends <code>Vehicle</code> with private members, constructors, and method overriding</td></tr>
-<tr><td><b>Interfaces</b></td><td>Define contracts like <code>Product</code> to enforce consistent object shapes across functions</td></tr>
-<tr><td><b>Access Modifiers</b></td><td>Use <code>private</code> constructor parameters for clean encapsulation and data hiding</td></tr>
-</tbody>
-</table>
-
-### ⚡ Async & Functional Patterns
-
-<table align="center">
-<thead>
-<tr><th align="left">Feature</th><th align="left">Description</th></tr>
-</thead>
-<tbody>
-<tr><td><b>Async/Await</b></td><td>Asynchronous square computation with <code>Promise&lt;number&gt;</code> return type and error rejection</td></tr>
-<tr><td><b>Array Filtering</b></td><td>Higher-order function <code>filterByRating</code> using typed object arrays and <code>.filter()</code></td></tr>
-<tr><td><b>Reduce Operations</b></td><td>Find the most expensive product from a typed array using <code>.reduce()</code> with null safety</td></tr>
-<tr><td><b>Type Guards</b></td><td>Runtime type checking with <code>typeof</code> for safe value processing in union types</td></tr>
+<tr><td align="center">1</td><td><b>Format String</b></td><td><code>formatString()</code></td><td>Optional Parameters</td><td>Converts a string to uppercase by default, or lowercase when the optional <code>toUpper</code> flag is explicitly set to <code>false</code></td></tr>
+<tr><td align="center">2</td><td><b>Filter by Rating</b></td><td><code>filterByRating()</code></td><td>Typed Object Arrays</td><td>Accepts an array of objects with <code>title</code> and <code>rating</code> properties, returns only items with a rating greater than 4</td></tr>
+<tr><td align="center">3</td><td><b>Concatenate Arrays</b></td><td><code>concatenateArrays&lt;T&gt;()</code></td><td>Generics</td><td>Merges multiple arrays of any type into a single array using a generic type parameter <code>&lt;T&gt;</code> and rest parameters</td></tr>
+<tr><td align="center">4</td><td><b>Vehicle & Car</b></td><td><code>Vehicle</code> → <code>Car</code></td><td>OOP & Inheritance</td><td>Base <code>Vehicle</code> class with private members; <code>Car</code> extends it with an additional <code>model</code> property and <code>getModel()</code> method</td></tr>
+<tr><td align="center">5</td><td><b>Process Value</b></td><td><code>processValue()</code></td><td>Union Types & Type Guards</td><td>Accepts <code>string | number</code>, returns the string length for strings or doubles the value for numbers using <code>typeof</code> narrowing</td></tr>
+<tr><td align="center">6</td><td><b>Most Expensive Product</b></td><td><code>getMostExpensiveProduct()</code></td><td>Interfaces & Reduce</td><td>Defines a <code>Product</code> interface and finds the highest-priced product using <code>.reduce()</code>, returns <code>null</code> for empty arrays</td></tr>
+<tr><td align="center">7</td><td><b>Day Type Checker</b></td><td><code>getDayType()</code></td><td>Enums</td><td>Uses a <code>Day</code> enum with all weekdays; returns <code>"Weekend"</code> for Saturday/Sunday and <code>"Weekday"</code> for the rest</td></tr>
+<tr><td align="center">8</td><td><b>Async Square</b></td><td><code>squareAsync()</code></td><td>Async/Await & Promises</td><td>Returns a <code>Promise&lt;number&gt;</code> that resolves with the squared value after 1 second, or rejects for negative inputs</td></tr>
 </tbody>
 </table>
 
@@ -77,7 +50,7 @@ A hands-on TypeScript project demonstrating core language features through pract
 <tbody>
 <tr><td><b>TypeScript</b></td><td align="center"><code>ES2024</code></td><td>Statically typed language for JavaScript</td></tr>
 <tr><td><b>Node.js</b></td><td align="center"><code>v18+</code></td><td>JavaScript runtime environment</td></tr>
-<tr><td><b>ts-node-dev</b></td><td align="center">—</td><td>TypeScript execution with auto-restart on changes</td></tr>
+<tr><td><b>ts-node-dev</b></td><td align="center">-</td><td>TypeScript execution with auto-restart on changes</td></tr>
 </tbody>
 </table>
 
@@ -88,8 +61,8 @@ A hands-on TypeScript project demonstrating core language features through pract
 <div align="center">
 <pre>
 ┌──────────────────────────────────────────────────────────┐
-│                    TypeScript Compiler                    │
-│                   (tsconfig.json — ES2024)                │
+│                    TypeScript Compiler                   │
+│                   (tsconfig.json - ES2024)               │
 ├──────────────────────────────────────────────────────────┤
 │                                                          │
 │  src/index.ts                                            │
@@ -97,8 +70,8 @@ A hands-on TypeScript project demonstrating core language features through pract
 │  │            Utility Functions                       │  │
 │  │                                                    │  │
 │  │  ┌──────────────┐  ┌───────────────────────────┐   │  │
-│  │  │  formatString │  │  filterByRating           │   │  │
-│  │  │  (Overloads)  │  │  (Array + Object Types)   │   │  │
+│  │  │  formatString │  │  filterByRating          │   │  │
+│  │  │  (Overloads)  │  │  (Array + Object Types)  │   │  │
 │  │  └──────────────┘  └───────────────────────────┘   │  │
 │  │                                                    │  │
 │  │  ┌──────────────┐  ┌───────────────────────────┐   │  │
@@ -107,7 +80,7 @@ A hands-on TypeScript project demonstrating core language features through pract
 │  │  └──────────────┘  └───────────────────────────┘   │  │
 │  │                                                    │  │
 │  │  ┌──────────────────────────────────────────────┐  │  │
-│  │  │  getMostExpensiveProduct (Interface + Reduce) │  │  │
+│  │  │  getMostExpensiveProduct (Interface + Reduce)│  │  │
 │  │  └──────────────────────────────────────────────┘  │  │
 │  ├────────────────────────────────────────────────────┤  │
 │  │            OOP Hierarchy                           │  │
@@ -122,8 +95,8 @@ A hands-on TypeScript project demonstrating core language features through pract
 │  │  │  (getDayType)│  │  (Promise + setTimeout)   │   │  │
 │  │  └──────────────┘  └───────────────────────────┘   │  │
 │  └────────────────────────────────────────────────────┘  │
-│                          │                               │
-│                          ▼                               │
+│                            │                             │
+│                            ▼                             │
 │                   dist/ (Compiled JS)                    │
 └──────────────────────────────────────────────────────────┘
 </pre>
@@ -187,7 +160,7 @@ The application will compile and run via `ts-node-dev` with auto-restart enabled
 <tr><th align="left">Command</th><th align="left">Description</th></tr>
 </thead>
 <tbody>
-<tr><td><code>npm run dev</code></td><td>Run TypeScript with <code>ts-node-dev</code> — auto-restarts on file changes</td></tr>
+<tr><td><code>npm run dev</code></td><td>Run TypeScript with <code>ts-node-dev</code> - auto-restarts on file changes</td></tr>
 <tr><td><code>npm test</code></td><td>Run the test suite (placeholder)</td></tr>
 </tbody>
 </table>
@@ -196,32 +169,32 @@ The application will compile and run via `ts-node-dev` with auto-restart enabled
 
 ## ⚙️ How It Works
 
-<div align="center">
+<div>
 <pre>
-Source File (index.ts) ──► ts-node-dev watches for changes
-                                    │
-                    ┌────────────────┘
-                    ▼
-          TypeScript Compiler
-          (strict mode, ES2024)
-                    │
-         ┌──────────┴──────────┐
-         ▼                     ▼
-   Type Checking          Transpilation
-   (Catches errors        (Generates JS
-    at compile time)       in /dist)
-         │                     │
-         ▼                     ▼
-   Error Feedback ◄──    Node.js Runtime
-   (Developer fix)       (Executes output)
+                      Source File (index.ts) ──► ts-node-dev watches for changes
+                                                          │
+                                          ┌───────────────┘
+                                          ▼
+                                TypeScript Compiler
+                                (strict mode, ES2024)
+                                          │
+                              ┌──────────┴──────────┐
+                              ▼                     ▼
+                        Type Checking          Transpilation
+                        (Catches errors        (Generates JS
+                          at compile time)       in /dist)
+                              │                     │
+                              ▼                     ▼
+                        Error Feedback ◄──    Node.js Runtime
+                        (Developer fix)       (Executes output)
 </pre>
 </div>
 
-1. **Write** — TypeScript functions are authored in `src/index.ts` with full type annotations.
-2. **Compile** — `ts-node-dev` transpiles TypeScript on-the-fly with `--transpile-only` for speed.
-3. **Execute** — The compiled JavaScript runs in the Node.js runtime environment.
-4. **Watch** — File changes trigger automatic re-compilation and re-execution via `--respawn`.
-5. **Validate** — TypeScript's strict mode catches type errors before runtime, ensuring code correctness.
+1. **Write** - TypeScript functions are authored in `src/index.ts` with full type annotations.
+2. **Compile** - `ts-node-dev` transpiles TypeScript on-the-fly with `--transpile-only` for speed.
+3. **Execute** - The compiled JavaScript runs in the Node.js runtime environment.
+4. **Watch** - File changes trigger automatic re-compilation and re-execution via `--respawn`.
+5. **Validate** - TypeScript's strict mode catches type errors before runtime, ensuring code correctness.
 
 <br/>
 
@@ -239,14 +212,14 @@ Source File (index.ts) ──► ts-node-dev watches for changes
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/zahid-web)
 [![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:zahid.official8@gmail.com)
 
-  <p>Creating impactful digital experiences with passion and purposeful design</p>
+  <p>Building type-safe solutions through clean code and continuous learning</p>
 </div>
 
 <br/>
 
 ## 🤝 Contributing
 
-Contributions are welcome and appreciated! Here's how you can help improve **Milestone 13**:
+Contributions are welcome and appreciated! Here's how you can help improve this project:
 
 ```bash
 # 1. Fork the repository
@@ -263,25 +236,4 @@ git push origin feature/your-feature-name
 # 5. Open a Pull Request against the main branch
 ```
 
-<<<<<<< HEAD
-<p align="center"><b>Milestone 13</b> — <i>Mastering TypeScript, one problem at a time.</i></p>
-=======
-## 🔹 **Key Differences**
-
-| Feature | `any` | `unknown` | `never` |
-| --- | --- | --- | --- |
-| **Type Safety** | No type safety. Type checking is disabled. | Requires type checking before use, preserving type safety. | Does not allow any values; represents functions that never return. |
-| **Use Case** | When you want maximum flexibility, but lose type safety. | When the type is unknown, but you want to enforce type checking. | For functions that don’t return a value (infinite loops, errors). |
-| **Assignments** | Can assign any type freely without errors. | Must check the type before performing any operation. | Cannot be assigned any value. |
-| **Common Use** | Used for dynamic, untyped data where type checking is not a priority. | Used when dealing with uncertain data where validation is required. | Used for functions or code paths that cannot finish normally (e.g., infinite loops or error-throwing functions). |
-
-## 🔹 **Conclusion**
-
-In summary, `any`, `unknown`, and `never` serve different purposes in TypeScript:
-
-- **`any`** provides the most flexibility but sacrifices type safety. It should be used cautiously to avoid undermining TypeScript's core benefit of static type checking.
-- **`unknown`** ensures type safety by requiring explicit type checks before using the value, making it a safer alternative to `any`.
-- **`never`** is used for functions that never return a value or when an operation cannot be completed, such as in infinite loops or error-throwing situations.
-
-By understanding and correctly using any, unknown, and never, developers can write more reliable, maintainable, and type-safe code.
->>>>>>> ee61bb8a3a96463cdee70652ef936dfe4aae2049
+<p align="center"><i>Mastering TypeScript, one problem at a time.</i></p>
