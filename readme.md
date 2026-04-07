@@ -4,7 +4,7 @@
 
 A hands-on TypeScript project demonstrating core language features through practical problem-solving - covering generics, type guards, union & intersection types, enums, OOP inheritance, async patterns and more.
 
-[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zahid-official/milestone-13)
+[![GitHub Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/zahid-official/milestone-13-problemSolving)
 <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
 <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
 <img src="https://img.shields.io/badge/ts--node--dev-3178C6?style=for-the-badge&logo=ts-node&logoColor=white" alt="ts-node-dev" />
@@ -137,7 +137,7 @@ milestone-13/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/zahid-official/milestone-13.git
+git clone https://github.com/zahid-official/milestone-13-problemSolving.git
 
 # 2. Navigate to the project directory
 cd milestone-13
